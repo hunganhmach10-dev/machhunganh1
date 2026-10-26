@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/3.css">
+  <title>Sản Phẩm </title>
+</head>
+
+<style>
+  .fbn img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .cha {
+    position: relative;
+  }
+
+  .m1 {
+    background: rgb(177, 57, 38);
+    padding: 5px;
+  }
+
+  .con {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+  }
+
+  .bannertintuc img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .bnnho img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .maunen {
+    background-color: rgb(199, 199, 199);
+  }
+
+  .nav-link:hover {
+    box-shadow: 0 0 10px gray;
+    border-radius: 10%;
+  }
+</style>
+
+<body>
+
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-sm text navbar-dark m2">
+      <div class="container-fluid">
+        <header style="height: 80px;" class=" d-flex align-items-center m-0 cha">
+          <img src="image/logo.png" style="height:80px;">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="info.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="tintuc.html">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Hỗ trợ</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container my-2">
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6 text-end p-0">
+        <label for="">Sắp xếp theo</label>
+        <select name="" id="" class="p-2">
+          <option value="">Theo tên</option>
+          <option value="">Theo giá</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-3">
+    <div class="row">
+      <div class="col-md-3" style="height:600px ; ">
+        <h3>Tìm kiếm theo đơn giá</h3>
+        <form action="/action_page.php">
+          <label for="vol">Volume (between 0 and 50000000):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50000000" class="w-100">
+        </form>
+
+        <div class="row">
+          <h3>Xe Máy</h3>
+        </div>
+        <div class="row" id="xemay">
+          <ul>
+            <li class="ms-4 p-1"><a href="">Honda</a></li>
+            <li class="ms-4 p-1"> <a href="">Yamaha</a></li>
+            <li class="ms-4 p-1"><a href="">Suzuki</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <h3>Xe 50cc</h3>
+        </div>
+        <div class="row" id="xe50cc">
+          <ul>
+            <li class="ms-4 p-1"><a href="">Kymco</a></li>
+            <li class="ms-4 p-1"> <a href="">DAELIM</a></li>
+            <li class="ms-4 p-1"><a href="">VICTORIA</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <h3>Xe Điện</h3>
+        </div>
+        <div class="row" id="xedien">
+          <ul>
+            <li class="ms-4 p-1"><a href="">Vinfast</a></li>
+            <li class="ms-4 p-1"> <a href="">Yadea</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-9" style="height:900px ;">
+        <div class="row">
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/blade.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Blade</h4>
+                <p class="card-text">21.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/ab125.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Air Blade</h4>
+                <p class="card-text">41.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/supercub.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Super cub</h4>
+                <p class="card-text">85.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/jptfi.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Jupiter</h4>
+                <p class="card-text">41.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/ex155.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Exiter</h4>
+                <p class="card-text">51.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/sh160.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Sh</h4>
+                <p class="card-text">101.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="chitiet.html" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/pg1.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pg1</h4>
+                <p class="card-text">45.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3  ">
+            <div class="card text-center">
+              <img class="card-img-top" src="image/ft125.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Future</h4>
+                <p class="card-text">32.000.000đ</p>
+                <a href="#" class="btn btn-danger">Mua</a>
+                <a href="#" class="btn btn-secondary">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="container-fluid  maunen my-2  ">
+      <div class="container">
+        <footer>
+          <div class="row">
+            <div class="col-md-3 p-2" style="height: 300px;">
+              <h5> CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ XE MÁY<br></h5>
+              <p> Facebook <br>
+                Instagram <br>
+                Youtube <br>
+                Email: hunganhmach10@gmail.com <br>
+                Hotline: 0399135294 <br>
+                Đăng ký lần đầu: 18/08/2009 <br>
+                Cấp lại lần 1: 18/08/2026 <br>
+                Nơi cấp: Sở kế hoạch và đầu tư TP. Hồ Chí Minh <br>
+              </p>
+            </div>
+            <div class="col-md-3 p-2" style="height: 300px;">
+              <p>
+                Ý kiến khách hàng <br>
+                Chính sách bảo mật<br>
+                Câu hỏi thường gặp<br>
+                Chính sách thanh toán<br>
+                Chính sách vận chuyển<br>
+                Chính sách bảo hành, bảo dưỡng<br>
+                Về chúng tôi <br>
+              </p>
+            </div>
+            <div class="col-md-3 p-2" style="height: 300px;">
+              Địa chỉ : 215 Nguyễn Văn Luông, Bình Phú, Hồ Chí Minh <br>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8777102141967!2d106.63146967592768!3d10.743907259790934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e794ceeb2e7%3A0x60feca181d4f1dd3!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEtpbmggdOG6vyBL4bu5IHRodeG6rXQgVHAuSENN!5e0!3m2!1svi!2s!4v1789953333121!5m2!1svi!2s"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+</body>
+
+</html>
